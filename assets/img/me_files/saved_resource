@@ -1,0 +1,21 @@
+getIP({
+   "businessName" : "",
+   "businessWebsite" : "",
+   "city" : "",
+   "continent" : "",
+   "country" : "",
+   "countryCode" : "",
+   "ipName" : "",
+   "ipType" : "",
+   "isp" : "",
+   "lat" : "",
+   "lon" : "",
+   "message" : "Payments failed, please login at https://extreme-ip-lookup.com/login and update your payment details.",
+   "org" : "",
+   "query" : "98.41.220.101",
+   "region" : "",
+   "status" : "fail",
+   "timezone" : "",
+   "utcOffset" : ""
+}
+);
