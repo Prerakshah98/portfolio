@@ -404,6 +404,30 @@ section .container {
 }
 
 /*--------------------------------------------------------------
+# certifications
+--------------------------------------------------------------*/
+
+.portfolio-wrap {
+  height: 200px; /* Set a consistent height for all cards */
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: transparent !important;
+}
+
+.certification-img {
+  max-height: 150px; /* Set a consistent image height */
+  object-fit:fill;
+  margin-bottom: 10px;
+}
+
+.portfolio-info {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
 .counts {
