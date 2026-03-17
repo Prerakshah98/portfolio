@@ -1176,6 +1176,46 @@
 
           <div class="grid md:grid-cols-3 gap-8">
           
+            <!-- Document Analysis Tool -->
+            <div
+              class="project-card datascience group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
+              <div class="relative overflow-hidden">
+                <img src="assets/img/project/document-analysis.jpg" alt="Document Analysis Tool"
+                  class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500 border border-gray-200" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <button onclick="openModal('document-analysis')"
+                      class="inline-flex items-center px-4 py-2 bg-white text-dark rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 shadow-lg">
+                      <i class="bx bx-info-circle mr-2"></i>
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-3">
+                    <i class="bx bx-message text-white text-sm"></i>
+                  </div>
+                  <h5 class="text-xl font-bold text-dark">Document Analysis Tool</h5>
+                </div>
+                <p class="text-gray-600 mb-4">An advanced AI-powered application that transforms static PDF documents into interactive knowledge bases. Uses a Dual-Architecture approach: RAG (Retrieval Augmented Generation) for precise Q&A and Context Stuffing for full document summarization. </p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">Python</span>
+                  <span class="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-xs font-medium">FastAPI</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">GenAI</span>
+                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">RAG</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Gemini</span>
+                  <span
+                    class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-medium">Streamlit</span>
+                </div>
+              </div>
+            </div>
+
+
+
             <!-- Chat with Gemini AI -->
             <div
               class="project-card datascience group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100">
@@ -1589,6 +1629,96 @@
     </div>
   </div>
 
+
+  <!-- Document Analysis Modal -->
+  <div id="document-analysis-modal" class="fixed inset-0 bg-black/50 z-50 hidden">
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+        <div class="relative">
+          <img src="assets/img/project/document-analysis.jpg" class="w-full h-64 object-none rounded-t-3xl"
+            alt="Document Analysis" />
+          <button onclick="closeModal('document-analysis')"
+            class="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
+            <i class="bx bx-x text-2xl text-gray-600"></i>
+          </button>
+        </div>
+        <div class="p-8">
+          <div class="flex items-center mb-6">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-4">
+              <i class="bx bx-message-rounded text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-3xl font-bold text-dark">Document Analysis Tool</h3>
+              <p class="text-gray-600">Generative AI</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <h4 class="text-lg font-semibold text-primary mb-3">Tech Stack</h4>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">Python</span>
+                  <span class="px-3 py-1 bg-gray-300 text-gray-800 rounded-full text-xs font-medium">FastAPI</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">GenAI</span>
+                  <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-medium">RAG</span>
+                  <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-medium">Gemini</span>
+                  <span
+                    class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-medium">Streamlit</span>
+                <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Chat Interface</span>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold text-primary mb-3">Project Links</h4>
+              <a href="https://github.com/Prerakshah98/Document-Analysis-Tool" target="_blank"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300">
+                <i class="bx bxl-github mr-2"></i>
+                View on GitHub
+              </a>
+              <a href="https://doc-insights.streamlit.app/" target="_blank"
+                class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300">
+                <i class="bx bxl-github mr-2"></i>
+                Website
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <p class="text-gray-700 leading-relaxed">
+              An advanced AI-powered application that transforms static PDF documents into interactive knowledge bases. Rebuilt as a decoupled client-server microservice, it safely handles multiple concurrent users and uses a Dual-Architecture approach: RAG (Retrieval Augmented Generation) for precise Q&A and Context Stuffing for full document summarization.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+            I rebuilt DocuMind — an intelligent document analysis tool. My goal was to graduate from writing simple Python scripts to engineering a true Decoupled Microservice Architecture. I wanted to tackle real-world system design challenges like multi-tenant state management, stateless HTTP protocols, and cloud memory optimization.
+            </p>
+            <div>
+              <h4 class="text-lg font-semibold text-primary mb-3">FEATURES</h4>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start">
+                  <i class="icofont-rounded-right text-primary mr-2 mt-1 flex-shrink-0"></i>
+                  <span><b><u>Decoupled Architecture:</u></b> A stateless FastAPI backend handles all heavy AI processing, keeping the Streamlit frontend fast and responsive.</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="icofont-rounded-right text-primary mr-2 mt-1 flex-shrink-0"></i>
+                  <span><b><u>Cloud-Optimized Memory:</u></b> Uses Google's Embedding APIs to offload heavy tensor computations, allowing the backend to run flawlessly on memory-constrained cloud tiers (like Render's 512MB limit).</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="icofont-rounded-right text-primary mr-2 mt-1 flex-shrink-0"></i>
+                  <span><b><u>Automated Garbage Collection:</u></b> Employs FastAPI Background Tasks to silently sweep and delete orphaned database folders when users abandon their sessions.</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="icofont-rounded-right text-primary mr-2 mt-1 flex-shrink-0"></i>
+                  <span><b><u>Dual Intelligence Engine:</u></b> Uses RAG (k=5 chunks) for accurate question answering and Context Stuffing for broad, bullet-point document summaries.</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sentiment Analysis Modal-->
   <div id="sentimentanalysis-modal" class="fixed inset-0 bg-black/50 z-50 hidden">
     <div class="flex items-center justify-center min-h-screen p-4">
       <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
@@ -1939,7 +2069,7 @@
       <div class="flex justify-center">
         <div
           class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
-          <a href="https://bit.ly/prerakresume" target="_blank" class="group">
+          <a href="https://bit.ly/prerak_resume_2026" target="_blank" class="group">
             <div
               class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
               <i class="icofont-page text-3xl text-primary group-hover:text-white transition-colors duration-300"></i>
