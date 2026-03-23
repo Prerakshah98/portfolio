@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Chat with Gemini AI - Portfolio</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',
+            secondary: '#8b5cf6',
+            dark: '#1e293b',
+          },
+          fontFamily: {
+            'open-sans': ['Open Sans', 'sans-serif'],
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 font-open-sans text-gray-800 antialiased overflow-x-hidden">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <a href="../index.html" class="inline-flex items-center px-4 py-2 mb-6 text-sm font-semibold text-primary bg-white rounded-lg shadow hover:bg-secondary hover:text-white transition duration-300">
+      <i class="bx bx-left-arrow-alt mr-2"></i>
+      Back to Portfolio
+    </a>
+
+    <div class="bg-white rounded-3xl overflow-hidden shadow-2xl">
+      <img src="../assets/img/project/gemini.png" class="w-full h-80 object-cover" alt="Chat with Gemini AI" />
+      <div class="p-8">
+        <h1 class="text-4xl font-bold mb-2">Chat with Gemini AI</h1>
+        <p class="text-gray-600 mb-4">Generative AI</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Tech Stack</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Python</span>
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">GenAI</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Gemini API</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Streamlit</span>
+              <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full">Chat Interface</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Project Links</h3>
+            <a href="https://github.com/Prerakshah98/Chat-with-Gemini" target="_blank" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition duration-300 mb-2">
+              <i class="bx bxl-github mr-2"></i>
+              View on GitHub
+            </a>
+            <br />
+            <a href="https://askgeminiai.streamlit.app/" target="_blank" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition duration-300">
+              <i class="bx bx-link mr-2"></i>
+              Website
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mb-4">This is a generative AI web application built using Python. It acts as a personal assistant that allows users to chat with Google's Gemini Flash model. The application features a simple web interface where users can input questions and receive real-time, intelligent responses.</p>
+        <p class="text-gray-700 leading-relaxed">Built to learn how to integrate Large Language Models (LLMs) into applications without a paid API dependency, using Google Gemini 2.0 Flash through the GenAI API.</p>
+
+        <h3 class="text-xl font-semibold text-primary mb-3">Features</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Real-time text generation using Gemini 2.0 Flash</li>
+          <li>Clean, responsive chat UI</li>
+          <li>Error handling for API failures</li>
+          <li>Secure API key management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

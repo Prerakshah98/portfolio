@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Smart Cash Manager - Portfolio</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',
+            secondary: '#8b5cf6',
+            dark: '#1e293b',
+          },
+          fontFamily: {
+            'open-sans': ['Open Sans', 'sans-serif'],
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 font-open-sans text-gray-800 antialiased overflow-x-hidden">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <a href="../index.html" class="inline-flex items-center px-4 py-2 mb-6 text-sm font-semibold text-primary bg-white rounded-lg shadow hover:bg-secondary hover:text-white transition duration-300">
+      <i class="bx bx-left-arrow-alt mr-2"></i>
+      Back to Portfolio
+    </a>
+
+    <div class="bg-white rounded-3xl overflow-hidden shadow-2xl">
+      <img src="../assets/img/project/smartcashmanager.jpg" class="w-full h-80 object-cover" alt="Smart Cash Manager" />
+      <div class="p-8">
+        <h1 class="text-4xl font-bold mb-2">Smart Cash Manager</h1>
+        <p class="text-gray-600 mb-4">Android Application • Personal Finance</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Tech Stack</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Java</span>
+              <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Android Studio</span>
+              <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">SQLite</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-3">Project Links</h3>
+            <a href="https://github.com/Prerakshah98/Smart-Cash-Manager" target="_blank" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition duration-300">
+              <i class="bx bxl-github mr-2"></i>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <p class="text-gray-700 leading-relaxed mb-4">In this project we are developing an application in which it will allow users to maintain a digital automated diary for expenses. User will login or sign up (for new user) to use this application. Once user has logged in with their credentials they can track their income and expense on a day to day basis.</p>
+
+        <h3 class="text-xl font-semibold text-primary mb-3">Key Features</h3>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Create unique account for all users</li>
+          <li>Add expenses and income tracking</li>
+          <li>View remaining balance for spending</li>
+          <li>Generate expense and income reports</li>
+          <li>Photo receipt capture and gallery selection</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
